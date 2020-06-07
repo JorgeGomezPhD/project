@@ -1,9 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link type="text/css" rel="stylesheet" href="assets/stylesheets/main.css"/>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
   <title>RPS</title>
 </head>
 <body>
+  <div class="container">
+      <h1>Try your luck at rock paper scissors against the computer!</h1>
 
+      <div class="info">
+        <button id="rules" class="btn btn-xs" type="button" onclick="showRules()"> Rules </button>
+        <button id="begin" class="btn btn-xs" type="button" onclick="getPlayerName()"> Play </button>
+        <button id="leave" class="btn btn-xs" type="button" onclick="beDone()"> Exit </button>
+        <p id="rule_info"></p>
+      </div>
+
+      <div class="stats" style="visibility:hidden">
+        <p id="results"></p>      
+        <p id="score"></p>
+      </div>
+
+      <div class="choices" style="visibility:hidden">
+        <p id="trigger"></p>
+        <span class="bttn" id="rock" type="button" onclick="getPlayerChoice(this.id)"><img class="pick" src="assets/images/hand-rock.png" alt="Rock"/></span>
+        <a><span class="bttn" id="paper" type="button" onclick="getPlayerChoice(this.id)"><img class="pick" src="assets/images/hand-paper.png" alt="Paper"/></span></a>
+        <a><span class="bttn" id="scissors" type="button" onclick="getPlayerChoice(this.id)"><img class="pick" src="assets/images/hand-scissors.png" alt="Scissors"/></span></a>
+      </div>
+
+      <div class="gameControl" style="visibility:hidden">
+        <button id="again" class="btn btn-success btn-xs" type="button" onclick="replay(this.id)"> Play again </button>
+        <button id="bye" class="btn btn-danger btn-xs" type="button" onclick="replay(this.id)"> I'm done </button>
+      </div>
+      <h1 id="later"></h1>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="assets/javascripts/rps.js" charset="utf-8"></script>
 </body>
 </html>

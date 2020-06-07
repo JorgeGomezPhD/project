@@ -1,0 +1,32 @@
+h1  {
+  color: white;
+  background-color: red;
+}
+.info {
+
+}
+
+#rules  {
+  color: white;/* text color*/
+  background-color: blue; /*button color*/
+}
+
+#begin {
+  color: white;/* text color*/
+  background-color: green; /*button color*/
+}
+
+#leave  {
+  color: white;/* text color*/
+  background-color: red; /*button color*/
+}
+
+#again  {
+  color: white;/* text color*/
+  background-color: green; /*button color*/
+}
+
+#bye  {
+  color: white;/* text color*/
+  background-color: red; /*button color*/  
+}
